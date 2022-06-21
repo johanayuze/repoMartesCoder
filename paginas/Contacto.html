@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>JYB CONSULTING - CONTACTO</title>
+	<link rel="shortcut icon" href="../imagenes/logo.ico">
+	<link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+		<nav>
+			<a href="../index.html">
+			<img src="../imagenes/logo.jpg" alt="logo jyb consulting">
+			</a>
+
+			<ol>
+				<li><a href="../index.html">Inicio</a></li>
+				<li><a href="Quienes somos.html">Quienes somos</a>
+				</li>
+				<li><a href="Servicios.html">Servicios</a>
+				</li>
+				<li><a href="Novedades.html">Novedades</a></li>
+				<li><a href="Contacto.html">Contacto</a></li>
+			</ol>
+		</nav>
+		<header>
+			<h1 class="contacto__h1">Contactenos</h1>
+		</header>
+		<main class="contacto__main">
+			<div class="contacto__texto">
+				<p class="contacto__p">Ante cualquier consulta y/o comentario, no dude en comunicarse o enviarnos un e-mail.</p>
+				<ul class="contacto__ul" >
+					<li>Johana Yuzefoff</li>
+					<li>Lic. En Administracion (UBA)</li>
+					<li>Cel: 1165445993</li>
+					<li>Email: johanayuze@gmail.com</li>
+					<li>Web: www.jybconsulting.com.ar</li>
+				</ul>
+			</div>
+			<section>
+				<form action="envio.php">
+					<fieldset>
+						<legend>Datos personales</legend>
+						<label for="name">Nombre</label>
+						<input type="text" id="name" placeholder="Ingresa tu nombre">
+						
+						<label for="apellido">Apellido</label>
+						<input type="text" id="apellido" placeholder="Ingresa tu Apellido">
+						
+						
+						<label for="email">Email</label>
+						<input type="email" id="email" placeholder="tumail@gmail.com">
+						
+						
+						<label for="tipo de cliente">Tipo de cliente</label>
+						<select name="tipo de cliente" id="tipo de cliente">
+							<option value="importador">Importador</option>
+							<option value="despachante">Despachante</option>
+							<option value="fabricante">Fabricante</option>
+						</select>
+					</fieldset>
+						
+					<fieldset>
+						<legend>Su Pedido</legend>
+						<label for="seguridad electrica">Certificacion de Seguridad Electrica</label>
+						<input type="checkbox" id="seguridad electrica" value="seguridad electrica">
+						
+						<label for="Juguetes">Certificacion de seguridad de juguetes</label>
+						<input type="checkbox" id="juguetes" value="juguetes">
+					</fieldset>
+						
+					<fieldset>
+						<legend>Desea Recibir Newsletter?</legend>	
+						<label for="si">Si</label>
+						<input type="radio" id="si" name="Newsletter" value="si">
+						
+						<label for="No">No</label>
+						<input type="radio" id="no" name="Newsletter" value="no">
+						
+					</fieldset>
+					<fieldset class="textarea">
+						<label for="mensaje">Dejanos tu Mensaje</label>
+						
+						<textarea name="mensaje" id="Mensaje" cols="50" rows="8"></textarea>
+						
+						<input type="reset" value="Cancelar">
+						<input type="submit" value="Enviar">
+					</fieldset>
+				</form>
+			</section>
+		</main>
+		<footer>
+			<h3 class="footer__h3">Seguinos en Linkedin</h3>
+			<a href="https://www.linkedin.com/company/j-b-consulting">
+			<img src="../imagenes/linkedin.png" alt="seguinos en linkedin">
+			</a>
+		</footer>
+</body>
+</html>

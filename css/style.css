@@ -1,0 +1,300 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400&display=swap');
+
+*{
+	font-family: 'Roboto', sans-serif;
+	margin: 0;
+	padding: 0;
+}
+
+html
+{
+	font-size: 62.5%;
+}
+
+body
+{
+	overflow-x: hidden;
+	background-image: url(../imagenes/bubble.png);
+	background-attachment: fixed;
+}
+
+
+nav{
+	background-color: green;
+	position: sticky;
+	top: 0;
+	display: flex;
+	flex-direction: column;
+	align-content: center;
+	align-items: center;
+	
+}
+	nav ol{
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+	}
+
+		nav ol li{
+			list-style: none;
+			margin: 20px;
+		}
+
+			nav ol li a{
+				color: white;
+				text-decoration:none;
+				font-size: 2rem;
+				}
+			nav ol li a:hover{
+			color: lightblue;
+			font-weight: bold;
+			}
+
+.indexheader__img{
+	width: 100%;
+	}
+
+.indexheader__h1{
+	font-size: 4rem;
+	color: white;
+	text-transform: uppercase;
+	text-align: center;
+	background-color: #029C1B;
+	padding: 10px;
+	 
+	}
+.indexheader__h2{
+	font-size: 3rem;
+	color: white;
+	text-align: center;
+	background-color: #029C1B;
+	padding: 10px; 
+	}
+
+.index__p{
+	background-color: #029C1B;
+	color: white;
+	line-height: 5rem;
+	font-size: 2rem;
+	text-align: justify;
+	padding: 20px;
+	border: groove white 10px;
+	}
+
+footer{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	background-color: green;
+	margin-top: 10px;
+	border: groove white 10px;
+	}
+
+footer img{ 
+			padding: 10px;
+			background-color: white; }
+
+.footer__h3{
+	color: white;
+	margin-bottom: 10px;
+	font-size: 1.5rem;
+}
+
+/*parrafos pagina quienes somos*/
+
+.quienessomos__p{
+	background-color: #029C1B;
+	color: white;
+	line-height: 4rem;
+	font-size: 1.5rem;
+	text-align: justify;
+	padding: 20px;
+	border: groove white 10px;
+}
+
+.xqelegirnos__li{
+	background-color: #029C1B;
+	color: white;
+	line-height: 4rem;
+	font-size: 1.5rem;
+	text-align: left;
+	border: groove white 10px;
+}
+
+/*comienza pagina servicios*/
+
+.servicios__h1{
+	font-size: 4rem;
+	color: white;
+	text-transform: uppercase;
+	text-align: center;
+	background-color: #029C1B;
+	padding: 10px;
+	margin: 10px auto; 
+}
+
+.servicios__section{
+	display: flex;
+	flex-direction: column;
+	align-content: center;
+	align-items: center;
+	background-color: white;
+	}
+
+.servicios__figure{
+	border: green solid 5px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;	
+}
+
+figure img{
+	width: 70%;
+	height: auto;
+}
+figcaption {
+	color: green;
+	font-size: 1.5rem;
+	text-align: center;
+	margin: 10px;
+	
+}
+
+.p__servicios{
+	font-size: 1.5rem;
+	color: green;
+	background-color: white;
+	text-align: justify;
+	line-height: 3rem;
+	margin: 10px;
+}
+
+/*----------------contacto------------*/
+
+.contacto__h1{
+	font-size: 4rem;
+	color: white;
+	text-transform: uppercase;
+	text-align: center;
+	background-color: #029C1B;
+	padding: 10px;
+}
+
+.contacto__main{
+	display: flex;
+	flex-direction: column;
+	width: 99%;
+}
+
+.contacto__texto{
+	border: solid green 2px;
+	margin: 20px 30px;
+	color: green;
+	padding: 20px;
+	font-size: 2rem;
+
+}
+
+.contacto__p{
+	margin-bottom: 10px;
+
+}
+
+.contacto__ul{list-style: none;}
+
+form{
+	border: solid green 5px;
+	font-size: 1.5rem;
+	padding: 5px;
+	line-height: 3rem;
+}
+
+.textarea{
+	text-align: center;
+}
+/*grid de index */
+
+#grid-container{
+	display: grid;
+	grid-template-columns: 1fr;
+	grid-template-areas:
+	"nav"
+	"header"
+	"main"
+	"footer"; 
+}
+	
+	#nav{
+		grid-area: nav;
+	}
+	#header{
+		grid-area: header;
+	}
+
+	#main{
+		grid-area: main;
+	}
+
+	#footer{
+		grid-area: footer;
+	}
+
+	
+	/*---------media queries index----------------------*/
+
+@media only screen and (min-width: 768px){
+	#grid-container{
+		grid-template-columns: 60vw 40vw;
+		grid-template-rows: auto;
+		grid-template-areas:
+		"nav nav" 
+		"header main" 
+		"footer footer";
+		}
+
+	#nav{
+		flex-direction: row;
+		justify-content: space-around;
+		}
+	
+	nav ol{
+		flex-direction: row;
+		justify-content: space-around;
+		}
+
+	}
+
+@media only screen and (min-width: 1024px){
+	#grid-container{
+		grid-template-columns: 48vw 48vw;
+		column-gap: 10px;
+		justify-content: center;
+		align-items: center;
+		}
+
+	
+	}
+
+	/*--------------media queries servicios---------*/
+
+@media only screen and (min-width: 1024px){
+	.servicios__section{
+		display: grid;
+		grid-template-columns: 1fr 1fr;
+		grid-template-rows: auto;
+		grid-template-areas: 
+		"juguetes electrica";
+		grid-gap: 10px;
+
+	}	
+
+#servicios__figure--juguetes{
+	grid-area: juguetes;
+	padding-top: 50px;
+}
+
+#servicios__figure--electrica{
+	grid-area: electrica;
+}
+
+}
