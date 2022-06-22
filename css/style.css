@@ -79,6 +79,8 @@ nav{
 	text-align: justify;
 	padding: 20px;
 	border: groove white 10px;
+	
+	transform: rotate(45deg);
 	}
 
 footer{
